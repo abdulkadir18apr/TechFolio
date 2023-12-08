@@ -1,0 +1,136 @@
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    .textContainer{
+        flex: 1;
+        display:flex;
+        flex-direction: column;
+        gap:40px;
+        h1{
+            font-size: 3rem;
+            line-height:88px;
+        }
+        span{
+            font-weight: 300;
+        }
+    }
+    .formContainer{
+        position: relative;
+        flex: 2;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            input,textarea{
+                padding: 20px;
+                background-color: unset;
+                border: 2px solid white;
+                color: white;
+                border-radius: 5px;
+            }
+            button{
+              padding:20px ;
+              background-color: orange;
+              cursor: pointer;
+              font-weight: 500;  
+              border-radius: 10px;
+              border: none;
+            }
+        }
+        .phoneSvg{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+        }
+    }
+    .resumeContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        position: relative;
+        .icon{
+            position: absolute;
+            top:10rem;
+            cursor: pointer;
+            img{
+                width: 50px;
+                opacity: 100;
+                filter: brightness(100);
+            }
+        }
+        
+        .image{
+            z-index: -1;
+            img{
+                width:10rem;
+                opacity: 40%;
+               
+            }
+        }
+       
+        button{
+            width: 10rem;
+            border: none;
+            padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 20px;
+                background:linear-gradient(90deg,#818cf8,#172554);
+        }
+    }
+}
+.resumeModal{
+
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    .imageContainer{
+       
+        width: 45vw;
+        height: 110vh;
+        padding-bottom: 3rem;
+        background-color: white;
+        position: relative;
+        .controls{
+            display: flex;
+            justify-content: center;
+            gap:40px;
+            position: absolute;
+            bottom: 4rem;
+            z-index: 999;
+            width: 100%;
+            button{
+                background:linear-gradient(90deg,#172554,#818cf8);
+                color: white;
+                text-align: center;
+                padding: 10px;
+                width: 25%;
+                cursor: pointer;
+                border-radius: 20px;
+                font-weight: 800;
+                
+            }
+        }
+        img{
+            width:100% ;
+            height: 100%;
+            filter: brightness(100%);
+            filter: contrast(120%);
+        }
+    }
+    
+
+}

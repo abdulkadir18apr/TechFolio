@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: 'DM sans';
+}
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#shadow-host-companion{
+    display: none;
+}
